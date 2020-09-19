@@ -18,7 +18,7 @@
     }
     var fraction = total/denominator
 
-    if (fraction.toString().indexOf('.') === -1) {
+    if (fraction % 1 === 0) {
       return true
     }
     else {
