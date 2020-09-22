@@ -17,13 +17,7 @@
       total += numbersArray[i]
     }
     var fraction = total/denominator
-
-    if (fraction % 1 === 0) {
-      return true
-    }
-    else {
-      return false
-    }
+    return Number.isInteger(fraction)
 
   }
 </script>
