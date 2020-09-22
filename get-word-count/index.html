@@ -10,7 +10,13 @@
 </body>
 <script>
   function getWordCount(sentence) {
-    return sentence.split(" ").length
+    var count = 1
+    for(var i = 0; i < sentence.length; i++) {
+      if(sentence[i] === ' ') {
+        count++
+      }
+    }
+    return count
   }
 </script>
 </html>
