@@ -10,18 +10,14 @@
 </body>
 <script>
   function decimalPlaceCounter(stringNumber) {
-    var period = stringNumber.indexOf('.')
-    var total = stringNumber.length
-
-    for(var i = 0; i < total; i++) {
-      if(period === -1) {
-        return 0
+    var result = 0
+    for(var i = stringNumber.length - 1; i > 0; i--) {
+      if(stringNumber[i] === '.') {
+        return result
       }
-      else {
-        return total - period - 1
-      }
+      result++
     }
-
+    return 0
   }
 </script>
 </html>
