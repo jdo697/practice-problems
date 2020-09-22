@@ -10,12 +10,8 @@
 </body>
 <script>
   function isWithinRange(number, rangeObject) {
-    if(number >= rangeObject.min && number <= rangeObject.max) {
-      return true
-    }
-    else {
-      return false
-    }
+    var numChecker = number >= rangeObject.min && number <= rangeObject.max
+    return numChecker
   }
 </script>
 </html>
